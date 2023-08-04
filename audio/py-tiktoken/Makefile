@@ -69,4 +69,7 @@ CARGO_CRATES=	aho-corasick-1.0.2 \
 post-build:
 	${STRIP_CMD} ${WRKSRC}/target/release/lib_tiktoken.so*
 
+post-install:
+	${ECHO_CMD} "${PYTHON_SITELIBDIR}/tiktoken/_tiktoken${PYTHON_EXT_SUFFIX}.so" >> ${TMPPLIST}
+
 .include <bsd.port.post.mk>
