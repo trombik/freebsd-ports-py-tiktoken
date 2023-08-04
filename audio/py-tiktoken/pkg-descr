@@ -1,0 +1,2 @@
+tiktoken is a fast BPE tokeniser for use with OpenAI's models, required by
+Whisper which is a general-purpose speech recognition model.
