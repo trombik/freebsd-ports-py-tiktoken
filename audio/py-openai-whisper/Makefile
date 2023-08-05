@@ -22,5 +22,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 WWW=	https://github.com/openai/whisper
 USES=		python:3.9+
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>
