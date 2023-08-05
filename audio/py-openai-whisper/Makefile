@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numba>0:devel/py-numba@${PY_FLAVOR} \
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tiktoken>0:audio/py-tiktoken@${PY_FLAVOR}
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKDIR}/LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 WWW=	https://github.com/openai/whisper
 USES=		python:3.9+
