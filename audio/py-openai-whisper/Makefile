@@ -14,7 +14,8 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numba>0:devel/py-numba@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}more-itertools>0:devel/py-more-itertools@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}tiktoken>0:audio/py-tiktoken@${PY_FLAVOR}
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tiktoken>0:audio/py-tiktoken@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tiktoken>0:audio/py-tiktoken@${PY_FLAVOR} \
+	ffmpeg>0:multimedia/ffmpeg \
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
