@@ -1,7 +1,8 @@
 PORTNAME=	numba
 DISTVERSION=	0.57.1
+PORTREVISION=1
 CATEGORIES=	devel python
-MASTER_SITES=	PYPI
+#MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	dave@dal.ca
@@ -21,6 +22,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}llvmlite>=0.31.0:devel/py-llvmlite@${PY_FLAV
 
 USES=		compiler:c++11-lang python fortran localbase
 USE_PYTHON=	distutils concurrent autoplist unittest
+USE_GITHUB=	yes
+GH_TUPLE=	numba:numba:5ef7c86
 
 MAKE_ENV=	NUMBA_DISABLE_TBB=1 # workaround for: not compatible with onetbb-2021.6.0, see https://github.com/numba/numba/issues/8487
 TEST_ENV=	${MAKE_ENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
